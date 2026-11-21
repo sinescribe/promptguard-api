@@ -1,5 +1,10 @@
 # PromptGuard API
 
+[![PyPI version](https://img.shields.io/pypi/v/promptguard-api?color=blue)](https://pypi.org/project/promptguard-api/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/sinescribe/promptguard-api/blob/main/LICENSE)
+[![Live Playground](https://img.shields.io/badge/Live_Playground-Try_in_Browser-orange)](https://sinescribe.github.io/promptguard-api/)
+[![Deploy to Render](https://img.shields.io/badge/Deploy_to-Render-46E3B7?logo=render&logoColor=white)](https://render.com/deploy?repo=https://github.com/sinescribe/promptguard-api)
+
 Sub-1ms zero-dependency FastAPI prompt-injection, ChatML delimiter spoofing, and Python AST execution firewall for autonomous AI agents.
 
 ## Why PromptGuard?
