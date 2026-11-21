@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptguard-api"
+version = "0.1.0"
+description = "Sub-1ms zero-dependency FastAPI prompt-injection, delimiter spoofing, and Python AST execution firewall for AI agents."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "sinescribe", email = "sinescribe@gmail.com" },
+]
+keywords = ["ai-security", "prompt-injection", "llm-firewall", "fastapi", "ast", "agents"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "pydantic>=2.0.0",
+]
+
+[project.scripts]
+promptguard-api = "promptguard_api.app:main"
+
+[project.urls]
+Homepage = "https://sinescribe5.gumroad.com"
+Documentation = "https://sinescribe5.gumroad.com/l/qzubcy"
+Pricing = "https://sinescribe5.gumroad.com/l/qzubcy"
+
+[tool.setuptools.packages.find]
+include = ["promptguard_api*"]
